@@ -1,0 +1,6 @@
+# Place your .pkl files here:
+# - ids_binary_model.pkl
+# - ids_multiclass_model.pkl
+# - scaler.pkl
+# - label_encoder.pkl
+# - feature_cols.pkl

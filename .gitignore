@@ -1,0 +1,103 @@
+# ── Python Engine ─────────────────────────────────────────────
+
+# Virtual environment
+python-engine/venv/
+python-engine/.venv/
+python-engine/env/
+
+# Environment variables — NEVER commit these
+python-engine/.env
+
+# Trained model files — too large for GitHub
+python-engine/models/*.pkl
+python-engine/models/*.joblib
+python-engine/models/*.h5
+
+# Python cache
+python-engine/__pycache__/
+python-engine/**/__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Logs
+python-engine/logs/
+*.log
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+
+# ── Frontend ──────────────────────────────────────────────────
+
+# Dependencies — installed by npm install
+ids-nextjs/node_modules/
+
+# Next.js build output
+ids-nextjs/.next/
+ids-nextjs/out/
+
+# Environment variables — NEVER commit these
+ids-nextjs/.env.local
+ids-nextjs/.env.development.local
+ids-nextjs/.env.test.local
+ids-nextjs/.env.production.local
+
+# Next.js cache
+ids-nextjs/.next/cache/
+
+
+# ── OS & Editor ───────────────────────────────────────────────
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/settings.json
+.vscode/launch.json
+
+# JetBrains / PyCharm
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+
+
+# ── Sensitive / Large files ───────────────────────────────────
+
+# Any .env file anywhere in the project
+.env
+.env.*
+!.env.example
+
+# Dataset files (CICIDS2017 is several GB)
+*.csv
+*.pcap
+*.pcapng
+data/
+
+# Any pickle or model files outside models/ as well
+*.pkl
+*.joblib
