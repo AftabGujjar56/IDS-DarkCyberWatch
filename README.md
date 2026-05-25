@@ -193,17 +193,26 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3 — Add your trained model files
+### 3 — Download and add your trained model files
 
 The `.pkl` model files are not included in the repository due to their size.
-Place them in the `python-engine/models/` folder:
+Download them from the Google Drive folder and place them in `python-engine/models/`:
+
+**Download models:** [DarkCyberWatch Models on Google Drive](https://drive.google.com/drive/folders/1gxW9z-SkuLvZXbFLdWnQHwb_ynF3j5nh)
+
+Extract the downloaded files and place them in:
 
 ```
 python-engine/
 └── models/
-    ├── binary_model.pkl
-    └── multiclass_model.pkl
+    ├── ids_binary_model.pkl
+    ├── ids_multiclass_model.pkl
+    ├── label_encoder.pkl
+    ├── scaler.pkl
+    └── feature_cols.pkl
 ```
+
+> **Note:** You must download all files from the Google Drive folder for the system to work correctly. The feature columns, scaler, and label encoder are required alongside the trained models.
 
 ### 4 — Set up the frontend
 
