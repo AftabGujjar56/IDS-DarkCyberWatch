@@ -72,7 +72,7 @@ function SimulatePanel() {
             borderRadius: 6, padding: '6px 14px',
             fontSize: 13, fontWeight: 600, color: '#f85149', cursor: 'pointer',
           }}
-        >⚡ Simulate Attack</button>
+        >⚡ Simulate Attacks</button>
 
         {open && (
           <div style={{
